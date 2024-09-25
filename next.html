@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <style>
+/* Red: F24865, Light Gray: F4F4F4, Blue: 45CAE6, Green: 09C775, Dark Gray: 797979 */
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+
+* {
+  box-sizing: border-box;
+  font-family: Quicksand, sans-serif;
+}
+
+body {
+  background-color: #797979;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  margin: 20px;
+  max-width: 1000px;
+  width: 1000%;
+}
+
+.wrap form {
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+.form-header {
+  background-color: #45CAE6;
+  border-radius: 4px 4px 0 0;
+  padding: 1em;
+}
+
+.form-header h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.75em;
+  margin: 0;
+}
+
+.form-body {
+  background-color: #fff;
+  padding: 1em;
+}
+
+.form-body label,
+.form-body input,
+.form-body select,
+.form-body textarea {
+  display: block;
+  width: 100%;
+}
+
+.form-body label {
+  font-size: .8em;
+  font-weight: 700;
+  line-height: 1;
+  margin: .75em 0 .25em;
+}
+
+.form-body input,
+.form-body select,
+.form-body textarea {
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 4px;
+  padding: .25em;
+}
+
+.form-body fieldset {
+  border: none;
+  margin: 0 0 1em;
+  padding: 0;
+}
+
+.form-body fieldset:last-of-type {
+  margin-bottom: 0;
+}
+
+.form-body fieldset legend {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.form-footer {
+  background-color: #e2e2e2;
+  border-radius: 0 0 4px 4px;
+  padding: 1em;
+}
+ 
+.form-footer input[type="submit"] {
+  background-color: #240107;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 1em 1.5em;
+}
+
+.form-footer input[type="Submit"] {
+  background-color: #f248640e;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 1em 1.5em;
+}
+
+/******** Primary School option actions ********/
+
+.sub-opts input[name="subscription"] {
+  display: none;
+}
+
+.sub-opts input[name="subscription"]   .sub-opt {
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.sub-opts input[name="subscription"]:checked   .sub-opt {
+  background-color: #09C775;
+  color: #fff;
+}
+
+.sub-opts input[name="subscription"]   .sub-opt .sub-label .fa {
+  display: none;
+}
+
+.sub-opts input[name="subscription"]:checked   .sub-opt .sub-label .fa {
+  display: inline-block;
+}
+
+.sub-opts .sub-opt .sub-label {
+  display: block;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 1em;
+}
+
+.sub-opts .sub-opt .sub-label span.price {
+  display: inline-block;
+  float: right;
+}
+
+
+
+ </style>
+
+</head>
+
+<body>
+<div class="wrap">
+  <form>
+    <div class="form-header">
+      <h2>Registration</h2>
+    </div>
+    <div class="form-body">
+        
+      <fieldset>
+       <center> <legend><i class="fa fa-user"></i> Bio-Data</legend></center><hr>
+          
+   
+        <center><legend><b><i class="fa fa-lock"></i>Secondary School</legend></b></center>
+        <select>
+          <option>Exam Type</option>
+          <option>NECO</option>
+          <option>NECO GC</option>
+          <option>SSCC</option>
+          <option>WAEC</option>
+          <option>NABTEB</option></select><br>
+          
+          <select>
+            <option>Exam Year</option>
+            <option>1990</option>
+            <option>1991</option>
+            <option>1992</option>
+            <option>1993</option>
+            <option>1994</option>
+            <option>1995</option>
+            <option>1996</option>
+            <option>1997</option>
+            <option>1998</option>
+            <option>1999</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+          </select><br>
+          <label for="pri">Name of Secondary School</label>
+        <input type="Primary" id="Started Year" name="Started Year" required><br>
+        <label for="pri">Enter Exam Number</label>
+        <input type="Primary" id="Started Year" name="Started Year" required><br>
+                <select>                  
+            <option>Select Subjects</option>
+            <option>English Language</option>
+            <option>Mathematics</option> 
+            <option>Agriculture</option> 
+            <option>Civic Education</option>
+            <option>Chemistry</option>
+            <option>Physics</option>
+            <option>Biology</option>
+            <option>Marketing</option>
+            <option>Computer</option>
+            <option>Further Mathematics</option>
+            <option>Home Economics</option>
+            <option>PHE</option>
+            <option>Geography</option>
+            <option>Government</option>
+            <option>Commerce</option>
+            <option>Accounting</option>
+            <option>Literature</option></select>
+            <select>
+              <option>Grade</option>
+              <option>A1</option>
+              <option>A2</option>
+              <option>A3</option>
+              <option>B2</option>
+              <option>B3</option>
+              <option>C4</option>
+              <option>C5</option>
+              <option>C6</option>
+              <option>D7</option>
+              <option>F9</option>
+            </select><br>
+            <select>
+              <b><option>Select Subjects</option></b>
+              <option>English Language</option>
+              <option>Mathematics</option> 
+              <option>Agriculture</option> 
+              <option>Civic Education</option>
+              <option>Chemistry</option>
+              <option>Physics</option>
+              <option>Biology</option>
+              <option>Marketing</option>
+              <option>Computer</option>
+              <option>Further Mathematics</option>
+              <option>Home Economics</option>
+              <option>PHE</option>
+              <option>Geography</option>
+              <option>Government</option>
+              <option>Commerce</option>
+              <option>Accounting</option>
+              <option>Literature</option></select>
+              <select>
+              <option>Grade</option>
+              <option>A1</option>
+              <option>A2</option>
+              <option>A3</option>
+              <option>B2</option>
+              <option>B3</option>
+              <option>C4</option>
+              <option>C5</option>
+              <option>C6</option>
+              <option>D7</option>
+              <option>F9</option>
+            </select><br>
+            <select>
+              <b><option>Select Subjects</option></b>
+              <option>English Language</option>
+              <option>Mathematics</option> 
+              <option>Agriculture</option> 
+              <option>Civic Education</option>
+              <option>Chemistry</option>
+              <option>Physics</option>
+              <option>Biology</option>
+              <option>Marketing</option>
+              <option>Computer</option>
+              <option>Further Mathematics</option>
+              <option>Home Economics</option>
+              <option>PHE</option>
+              <option>Geography</option>
+              <option>Government</option>
+              <option>Commerce</option>
+              <option>Accounting</option>
+              <option>Literature</option></select>
+              <select>
+                <option>Grade</option>
+                <option>A1</option>
+                <option>A2</option>
+                <option>A3</option>
+                <option>B2</option>
+                <option>B3</option>
+                <option>C4</option>
+                <option>C5</option>
+                <option>C6</option>
+                <option>D7</option>
+                <option>F9</option>
+              </select><br>
+              <select>
+                <b><option>Select Subjects</option></b>
+                <option>English Language</option>
+                <option>Mathematics</option> 
+                <option>Agriculture</option> 
+                <option>Civic Education</option>
+                <option>Chemistry</option>
+                <option>Physics</option>
+                <option>Biology</option>
+                <option>Marketing</option>
+                <option>Computer</option>
+                <option>Further Mathematics</option>
+                <option>Home Economics</option>
+                <option>PHE</option>
+                <option>Geography</option>
+                <option>Government</option>
+                <option>Commerce</option>
+                <option>Accounting</option>
+                <option>Literature</option></select>
+                <select>
+                <option>Grade</option>
+                <option>A1</option>
+                <option>A2</option>
+                <option>A3</option>
+                <option>B2</option>
+                <option>B3</option>
+                <option>C4</option>
+                <option>C5</option>
+                <option>C6</option>
+                <option>D7</option>
+                <option>F9</option>
+              </select><br>
+              <select>
+                <b><option>Select Subjects</option></b>
+                <option>English Language</option>
+                <option>Mathematics</option> 
+                <option>Agriculture</option> 
+                <option>Civic Education</option>
+                <option>Chemistry</option>
+                <option>Physics</option>
+                <option>Biology</option>
+                <option>Marketing</option>
+                <option>Computer</option>
+                <option>Further Mathematics</option>
+                <option>Home Economics</option>
+                <option>PHE</option>
+                <option>Geography</option>
+                <option>Government</option>
+                <option>Commerce</option>
+                <option>Accounting</option>
+                <option>Literature</option></select>
+                <select>
+                  <option>Grade</option>
+                  <option>A1</option>
+                  <option>A2</option>
+                  <option>A3</option>
+                  <option>B2</option>
+                  <option>B3</option>
+                  <option>C4</option>
+                  <option>C5</option>
+                  <option>C6</option>
+                  <option>D7</option>
+                  <option>F9</option>
+                </select><br>
+                <select>
+                  <b><option>Select Subjects</option></b>
+                  <option>English Language</option>
+                  <option>Mathematics</option> 
+                  <option>Agriculture</option> 
+                  <option>Civic Education</option>
+                  <option>Chemistry</option>
+                  <option>Physics</option>
+                  <option>Biology</option>
+                  <option>Marketing</option>
+                  <option>Computer</option>
+                  <option>Further Mathematics</option>
+                  <option>Home Economics</option>
+                  <option>PHE</option>
+                  <option>Geography</option>
+                  <option>Government</option>
+                  <option>Commerce</option>
+                  <option>Accounting</option>
+                  <option>Literature</option></select>
+                  <select>
+                  <option>Grade</option>
+                  <option>A1</option>
+                  <option>A2</option>
+                  <option>A3</option>
+                  <option>B2</option>
+                  <option>B3</option>
+                  <option>C4</option>
+                  <option>C5</option>
+                  <option>C6</option>
+                  <option>D7</option>
+                  <option>F9</option>
+                </select><br>
+                <select>
+                  <b><option>Select Subjects</option></b>
+                  <option>English Language</option>
+                  <option>Mathematics</option> 
+                  <option>Agriculture</option> 
+                  <option>Civic Education</option>
+                  <option>Chemistry</option>
+                  <option>Physics</option>
+                  <option>Biology</option>
+                  <option>Marketing</option>
+                  <option>Computer</option>
+                  <option>Further Mathematics</option>
+                  <option>Home Economics</option>
+                  <option>PHE</option>
+                  <option>Geography</option>
+                  <option>Government</option>
+                  <option>Commerce</option>
+                  <option>Accounting</option>
+                  <option>Literature</option></select>
+                  <select>
+                    <option>Grade</option>
+                    <option>A1</option>
+                    <option>A2</option>
+                    <option>A3</option>
+                    <option>B2</option>
+                    <option>B3</option>
+                    <option>C4</option>
+                    <option>C5</option>
+                    <option>C6</option>
+                    <option>D7</option>
+                    <option>F9</option>
+                  </select><br>
+                  <select>
+                    <b><option>Select Subjects</option></b>
+                    <option>English Language</option>
+                    <option>Mathematics</option> 
+                    <option>Agriculture</option> 
+                    <option>Civic Education</option>
+                    <option>Chemistry</option>
+                    <option>Physics</option>
+                    <option>Biology</option>
+                    <option>Marketing</option>
+                    <option>Computer</option>
+                    <option>Further Mathematics</option>
+                    <option>Home Economics</option>
+                    <option>PHE</option>
+                    <option>Geography</option>
+                    <option>Government</option>
+                    <option>Commerce</option>
+                    <option>Accounting</option>
+                    <option>Literature</option></select>
+                    <select>
+                    <option>Grade</option>
+                    <option>A1</option>
+                    <option>A2</option>
+                    <option>A3</option>
+                    <option>B2</option>
+                    <option>B3</option>
+                    <option>C4</option>
+                    <option>C5</option>
+                    <option>C6</option>
+                    <option>D7</option>
+                    <option>F9</option>
+                  </select><br>
+                  <select>
+                    <b><option>Select Subjects</option></b>
+                    <option>English Language</option>
+                    <option>Mathematics</option> 
+                    <option>Agriculture</option> 
+                    <option>Civic Education</option>
+                    <option>Chemistry</option>
+                    <option>Physics</option>
+                    <option>Biology</option>
+                    <option>Marketing</option>
+                    <option>Computer</option>
+                    <option>Further Mathematics</option>
+                    <option>Home Economics</option>
+                    <option>PHE</option>
+                    <option>Geography</option>
+                    <option>Government</option>
+                    <option>Commerce</option>
+                    <option>Accounting</option>
+                    <option>Literature</option></select>
+                    <select>
+                      <option>Grade</option>
+                      <option>A1</option>
+                      <option>A2</option>
+                      <option>A3</option>
+                      <option>B2</option>
+                      <option>B3</option>
+                      <option>C4</option>
+                      <option>C5</option>
+                      <option>C6</option>
+                      <option>D7</option>
+                      <option>F9</option>
+                    </select><br>
+                    <select>
+                      <b><option>Select Subjects</option></b>
+                      <option>English Language</option>
+                      <option>Mathematics</option> 
+                      <option>Agriculture</option> 
+                      <option>Civic Education</option>
+                      <option>Chemistry</option>
+                      <option>Physics</option>
+                      <option>Biology</option>
+                      <option>Marketing</option>
+                      <option>Computer</option>
+                      <option>Further Mathematics</option>
+                      <option>Home Economics</option>
+                      <option>PHE</option>
+                      <option>Geography</option>
+                      <option>Government</option>
+                      <option>Commerce</option>
+                      <option>Accounting</option>
+                      <option>Literature</option></select>
+                      <select>
+                      <option>Grade</option>
+                      <option>A1</option>
+                      <option>A2</option>
+                      <option>A3</option>
+                      <option>B2</option>
+                      <option>B3</option>
+                      <option>C4</option>
+                      <option>C5</option>
+                      <option>C6</option>
+                      <option>D7</option>
+                      <option>F9</option>
+                    </select><br>
+                    <select>
+                      <b><option>Select Subjects</option></b>
+                      <option>English Language</option>
+                      <option>Mathematics</option> 
+                      <option>Agriculture</option> 
+                      <option>Civic Education</option>
+                      <option>Chemistry</option>
+                      <option>Physics</option>
+                      <option>Biology</option>
+                      <option>Marketing</option>
+                      <option>Computer</option>
+                      <option>Further Mathematics</option>
+                      <option>Home Economics</option>
+                      <option>PHE</option>
+                      <option>Geography</option>
+                      <option>Government</option>
+                      <option>Commerce</option>
+                      <option>Accounting</option>
+                      <option>Literature</option></select>
+                      <select>
+                        <option>Grade</option>
+                        <option>A1</option>
+                        <option>A2</option>
+                        <option>A3</option>
+                        <option>B2</option>
+                        <option>B3</option>
+                        <option>C4</option>
+                        <option>C5</option>
+                        <option>C6</option>
+                        <option>D7</option>
+                        <option>F9</option>
+                      </select><br>
+                      <select>
+                        <b><option>Select Subjects</option></b>
+                        <option>English Language</option>
+                        <option>Mathematics</option> 
+                        <option>Agriculture</option> 
+                        <option>Civic Education</option>
+                        <option>Chemistry</option>
+                        <option>Physics</option>
+                        <option>Biology</option>
+                        <option>Marketing</option>
+                        <option>Computer</option>
+                        <option>Further Mathematics</option>
+                        <option>Home Economics</option>
+                        <option>PHE</option>
+                        <option>Geography</option>
+                        <option>Government</option>
+                        <option>Commerce</option>
+                        <option>Accounting</option>
+                        <option>Literature</option></select>
+                        <select>
+                        <option>Grade</option>
+                        <option>A1</option>
+                        <option>A2</option>
+                        <option>A3</option>
+                        <option>B2</option>
+                        <option>B3</option>
+                        <option>C4</option>
+                        <option>C5</option>
+                        <option>C6</option>
+                        <option>D7</option>
+                        <option>F9</option>
+                      </select><br>
+                      <select>
+                        <b><option>Select Subjects</option></b>
+                        <option>English Language</option>
+                        <option>Mathematics</option> 
+                        <option>Agriculture</option> 
+                        <option>Civic Education</option>
+                        <option>Chemistry</option>
+                        <option>Physics</option>
+                        <option>Biology</option>
+                        <option>Marketing</option>
+                        <option>Computer</option>
+                        <option>Further Mathematics</option>
+                        <option>Home Economics</option>
+                        <option>PHE</option>
+                        <option>Geography</option>
+                        <option>Government</option>
+                        <option>Commerce</option>
+                        <option>Accounting</option>
+                        <option>Literature</option></select>
+                        <select>
+                          <option>Grade</option>
+                          <option>A1</option>
+                          <option>A2</option>
+                          <option>A3</option>
+                          <option>B2</option>
+                          <option>B3</option>
+                          <option>C4</option>
+                          <option>C5</option>
+                          <option>C6</option>
+                          <option>D7</option>
+                          <option>F9</option>
+                        </select><br>
+                        <select>
+                          <b><option>Select Subjects</option></b>
+                          <option>English Language</option>
+                          <option>Mathematics</option> 
+                          <option>Agriculture</option> 
+                          <option>Civic Education</option>
+                          <option>Chemistry</option>
+                          <option>Physics</option>
+                          <option>Biology</option>
+                          <option>Marketing</option>
+                          <option>Computer</option>
+                          <option>Further Mathematics</option>
+                          <option>Home Economics</option>
+                          <option>PHE</option>
+                          <option>Geography</option>
+                          <option>Government</option>
+                          <option>Commerce</option>
+                          <option>Accounting</option>
+                          <option>Literature</option></select>
+                          <select>
+                          <option>Grade</option>
+                          <option>A1</option>
+                          <option>A2</option>
+                          <option>A3</option>
+                          <option>B2</option>
+                          <option>B3</option>
+                          <option>C4</option>
+                          <option>C5</option>
+                          <option>C6</option>
+                          <option>D7</option>
+                          <option>F9</option>
+                        </select><br>
+                        <select>
+                          <b><option>Select Subjects</option></b>
+                          <option>English Language</option>
+                          <option>Mathematics</option> 
+                          <option>Agriculture</option> 
+                          <option>Civic Education</option>
+                          <option>Chemistry</option>
+                          <option>Physics</option>
+                          <option>Biology</option>
+                          <option>Marketing</option>
+                          <option>Computer</option>
+                          <option>Further Mathematics</option>
+                          <option>Home Economics</option>
+                          <option>PHE</option>
+                          <option>Geography</option>
+                          <option>Government</option>
+                          <option>Commerce</option>
+                          <option>Accounting</option>
+                          <option>Literature</option></select>
+                          <select>
+                            <option>Grade</option>
+                            <option>A1</option>
+                            <option>A2</option>
+                            <option>A3</option>
+                            <option>B2</option>
+                            <option>B3</option>
+                            <option>C4</option>
+                            <option>C5</option>
+                            <option>C6</option>
+                            <option>D7</option>
+                            <option>F9</option>
+                          </select><br>
+                          <select>
+                            <b><option>Select Subjects</option></b>
+                            <option>English Language</option>
+                            <option>Mathematics</option> 
+                            <option>Agriculture</option> 
+                            <option>Civic Education</option>
+                            <option>Chemistry</option>
+                            <option>Physics</option>
+                            <option>Biology</option>
+                            <option>Marketing</option>
+                            <option>Computer</option>
+                            <option>Further Mathematics</option>
+                            <option>Home Economics</option>
+                            <option>PHE</option>
+                            <option>Geography</option>
+                            <option>Government</option>
+                            <option>Commerce</option>
+                            <option>Accounting</option>
+                            <option>Literature</option></select>
+                            <select>
+                            <option>Grade</option>
+                            <option>A1</option>
+                            <option>A2</option>
+                            <option>A3</option>
+                            <option>B2</option>
+                            <option>B3</option>
+                            <option>C4</option>
+                            <option>C5</option>
+                            <option>C6</option>
+                            <option>D7</option>
+                            <option>F9</option>
+                          </select><br>
+      </fieldset><hr>
+      <fieldset>
+        <center><legend><i class="fa fa-Start"></i> Name of Tertiary Institution Attended With Date</legend></center>
+        <label for="pri">Name of Tertiary Institution Atteded</label>
+        <select>
+          <option>Select Institution</option>
+          <option>Abubakar Tafawa Balewa University Bauchi State</option>
+          <option>Prince Abubakar Audu University Anyigba</option>
+          <option>Federal Polytechnic Idah, Kogi State</option>
+          <option>Kaduna Polytechnic, Kaduna</option>
+          <option>College of Health Science and Technology Idah, Kogi State</option>
+          <option>Federal Polytechnic Bauchi, Bauchi State</option>
+          <option>Sokoto State University, Sokoto</option>
+          <option>Ahmadu Bello University Zaria (ABU)</option>
+          <option>Nuhu Bamali Polytechni Kaduna, Kaduna State</option>
+          <option>Kaduna State Univeristy</option>
+          <option>University of Abuja, FCT</option>
+          <option>Federal University Lokoja</option>
+          <option>Abubakar Tatari Polytechnic Bauchi</option>
+          <option>Usman Danfodio University Sokoto State</option>
+          <option>Federal University Dutsema, Katsina</option> 
+          <option>Auchi Polytechnic</option>
+          <option>Michael Okpara University</option>
+          <option>Obafemi Awolowo Ile Ife</option>
+          <option>Federal University of Technology Akure</option>
+          <option>Al-Hikma University</option>
+          <option>University of Jos</option>
+          <option>Lagos State University</option>
+          <option>Federal Polytechni Nasarawa State</option>
+          <option>Nasarawa State University, Nasarawa</option>
+          <option>Umar Musa Yaradu'a University Katsina</option>
+          <option>Sokoto State Polytechnic, Sokoto</option>
+          <option>Federal University Kashere, Gombe State</option>
+          <option>Gombe State University, Gombe</option>
+          <option>Federal Polytechnic Maiduguri</option>
+          <option>University of Maiduguri</option>
+          <option>Bayero University Kano</option>
+          <option>Federal University Jigawa, Jigawa State</option>
+        </select>
+        
+        <label for="date">From  </label>
+        <input type="Primary" id="Started Year" name="Started Year" required>
+        <label for="date">To</label>
+        <input type="Primary" id="Started Year" name="Started Year" required>
+        </fieldset><hr>
+      
+    </div>
+   <center> <div class="form-footer">
+<a href="reg.html" class="previous">&laquo; Previous</a>
+<a href="#" class="next">Next &raquo;</a></center>
+
+      
+    </div>
+  </form>
+</div>
+
+</body>
+
+</html 
+
+ 
